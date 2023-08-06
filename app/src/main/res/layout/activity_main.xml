@@ -18,13 +18,43 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Email_id"
-        android:layout_alignParentBottom="false"
-        android:layout_alignParentRight="false"
-        />
+        android:text="Hello World!"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+<!--    <TextView-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="Email_id"-->
+<!--        android:layout_alignParentBottom="false"-->
+<!--        android:layout_alignParentRight="false"-->
+<!--        />-->
+<!--    <EditText-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="match_parent"-->
+<!--        android:layout_marginVertical=""/>-->
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/send"
+        android:textSize="20sp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:id="@+id/Button_main"
+        android:onClick="SecondActivitycall"/>
+
     <EditText
         android:layout_width="wrap_content"
-        android:layout_height="match_parent"
-        android:layout_marginVertical=""/>
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@+id/Button_main"
+        android:layout_toStartOf="@+id/Button_main"
+        android:layout_alignParentBottom="true"
+        android:hint="@string/enter_your_message"
+
+        />
 
 </RelativeLayout>

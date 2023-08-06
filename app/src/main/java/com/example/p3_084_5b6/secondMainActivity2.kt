@@ -3,20 +3,20 @@ package com.example.p3_084_5b6
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.util.Log
 import android.view.View
 import android.widget.Button
 
-class MainActivity : AppCompatActivity() {
-    val tag="MainActivity"
+class SecondMainActivity2 : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+        setContentView(R.layout.activity_second_main2)
     }
-
     fun SecondActivitycall(view: View) {
-        Log.i(tag," is called")
+        //  val secondManiActivity2 = intent
+     //   var secondManiActivity2 = null
+        var secondManiActivity2 = null
+        intent= Intent(this,secondManiActivity2)
+
     }
-    //val Button_main= findViewById<Button>(R.id.Button_main)
 
 }
