@@ -14,6 +14,28 @@
 <!--        app:layout_constraintEnd_toEndOf="parent"-->
 <!--        app:layout_constraintStart_toStartOf="parent"-->
 <!--        app:layout_constraintTop_toTopOf="parent" />-->
+      <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/GUNI"
+        android:textSize="80sp"
+        android:textColor="#FF00FF"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="80sp"
+        android:textStyle="bold"
+        android:id="@+id/guni"/>
+    
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/guni"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="160sp"
+        android:layout_marginBottom="50sp"
+        android:text="@string/Email_Id"
+        android:textSize="25sp"
+        android:layout_below="@+id/guni"
+        android:layout_toLeftOf ="@+id/guni"/>
 
     <TextView
         android:layout_width="wrap_content"
