@@ -54,7 +54,7 @@
         android:layout_toStartOf="@+id/Button_main"
         android:layout_alignParentBottom="true"
         android:hint="@string/enter_your_message"
-
+        android:id="@+id/edit_text"
         />
 
 </RelativeLayout>

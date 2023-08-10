@@ -6,17 +6,27 @@ import android.os.Bundle
 import android.util.Log
 import android.view.View
 import android.widget.Button
+import android.widget.EditText
 
 class MainActivity : AppCompatActivity() {
     val tag="MainActivity"
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+
+        val EXTRA_MESSAGE = "com.example.p3_084_5b6.message"
+        lateinit var Message_Edit_text:EditText
+        Message_Edit_text = findViewById(R.id.edit_text)
     }
 
     fun SecondActivitycall(view: View) {
         Log.i(tag," is called")
-    }
-    //val Button_main= findViewById<Button>(R.id.Button_main)
 
+        intent = Intent(this,SecondMainActivity2::class.java)
+
+        var message = Message_Edit_text.toString()
+        intent.putExtra("MainActivity1",EXTRA_MESSAGE)
+        startActivity(intent)
+
+    }
 }
