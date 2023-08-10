@@ -7,17 +7,17 @@ import android.view.View
 import android.widget.Button
 import android.widget.EditText
 import android.widget.TextClock
+import android.widget.TextView
 
 class SecondMainActivity2 : AppCompatActivity() {
-     lateinit var Text_Header:EditText
+     lateinit var Text_Header:TextView
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_second_main2)
 
-
         val intent = intent
-        var bundle:String? = intent.getStringExtra("MainActivity1")
-        findViewById(R.id.text2)
+        var bundle:String?= intent.getStringExtra("MainActivity1")
+        Text_Header = findViewById(R.id.text2)
         Text_Header.text = bundle
 
       // var Button_main = findViewById<Button>(R.id.Button_main)

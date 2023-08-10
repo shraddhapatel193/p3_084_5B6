@@ -10,12 +10,12 @@ import android.widget.EditText
 
 class MainActivity : AppCompatActivity() {
     val tag="MainActivity"
+    lateinit var Message_Edit_text:EditText
+    val EXTRA_MESSAGE = "com.example.p3_084_5b6.message"
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-
-        val EXTRA_MESSAGE = "com.example.p3_084_5b6.message"
-        lateinit var Message_Edit_text:EditText
         Message_Edit_text = findViewById(R.id.edit_text)
     }
 
